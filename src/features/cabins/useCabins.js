@@ -13,7 +13,7 @@ export function useCabins() {
 
   return {
     isPending,
-    data: cabins,
+    cabins,
     error,
   };
 }
