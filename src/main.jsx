@@ -1,3 +1,9 @@
+const error = console.error;
+console.error = (...args) => {
+  if (/defaultProps/.test(args[0])) return;
+  error(...args);
+};
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
